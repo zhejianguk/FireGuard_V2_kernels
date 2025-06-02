@@ -105,9 +105,6 @@ int main(void)
     // Testing detecions of buffer overflow.
     *(ptr + i) = i;
     sum = sum + *(ptr+i);
-    if (i >= ptr_size){
-      printf("A\r\n");
-    }
   }
 
   free(ptr);
